@@ -1416,6 +1416,55 @@
             "install-path": "../hamcrest/hamcrest-php"
         },
         {
+            "name": "jxlwqq/quill",
+            "version": "1.0.4",
+            "version_normalized": "1.0.4.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://mirrors.cloud.tencent.com/repository/composer/jxlwqq/quill/1.0.4/jxlwqq-quill-1.0.4.zip",
+                "reference": "be5ab91840f25dfee4db0ea5c408943930912645",
+                "shasum": ""
+            },
+            "require": {
+                "encore/laravel-admin": "~1.6",
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~6.0"
+            },
+            "time": "2021-12-15T10:49:17+00:00",
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Jxlwqq\\Quill\\QuillServiceProvider"
+                    ]
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Jxlwqq\\Quill\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "jxlwqq",
+                    "email": "jxlwqq@gmail.com"
+                }
+            ],
+            "description": "quill editor for laravel-admin",
+            "homepage": "https://github.com/jxlwqq/quill",
+            "keywords": [
+                "extension",
+                "laravel-admin"
+            ],
+            "install-path": "../jxlwqq/quill"
+        },
+        {
             "name": "laravel-lang/lang",
             "version": "3.0.62",
             "version_normalized": "3.0.62.0",

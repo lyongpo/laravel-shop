@@ -403,6 +403,15 @@
                 0 => 'v7.30.6',
             ),
         ),
+        'jxlwqq/quill' => array(
+            'pretty_version' => '1.0.4',
+            'version' => '1.0.4.0',
+            'reference' => 'be5ab91840f25dfee4db0ea5c408943930912645',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../jxlwqq/quill',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'kodova/hamcrest-php' => array(
             'dev_requirement' => true,
             'replaced' => array(

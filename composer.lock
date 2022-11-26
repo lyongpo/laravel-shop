@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "308764bb2bf25304cb536f4e3f05883f",
+    "content-hash": "51797f975f54db7e5d95a486b38ee83e",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -994,6 +994,52 @@
                 "url"
             ],
             "time": "2022-10-26T14:07:24+00:00"
+        },
+        {
+            "name": "jxlwqq/quill",
+            "version": "1.0.4",
+            "dist": {
+                "type": "zip",
+                "url": "https://mirrors.cloud.tencent.com/repository/composer/jxlwqq/quill/1.0.4/jxlwqq-quill-1.0.4.zip",
+                "reference": "be5ab91840f25dfee4db0ea5c408943930912645",
+                "shasum": ""
+            },
+            "require": {
+                "encore/laravel-admin": "~1.6",
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Jxlwqq\\Quill\\QuillServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Jxlwqq\\Quill\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "jxlwqq",
+                    "email": "jxlwqq@gmail.com"
+                }
+            ],
+            "description": "quill editor for laravel-admin",
+            "homepage": "https://github.com/jxlwqq/quill",
+            "keywords": [
+                "extension",
+                "laravel-admin"
+            ],
+            "time": "2021-12-15T10:49:17+00:00"
         },
         {
             "name": "laravel-lang/lang",
