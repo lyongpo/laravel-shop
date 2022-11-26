@@ -6,6 +6,9 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    'App\\Admin\\Controllers\\AuthController' => $baseDir . '/app/Admin/Controllers/AuthController.php',
+    'App\\Admin\\Controllers\\HomeController' => $baseDir . '/app/Admin/Controllers/HomeController.php',
+    'App\\Admin\\Controllers\\UserController' => $baseDir . '/app/Admin/Controllers/UserController.php',
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
     'App\\Http\\Controllers\\Auth\\ConfirmPasswordController' => $baseDir . '/app/Http/Controllers/Auth/ConfirmPasswordController.php',
@@ -29,6 +32,8 @@ return array(
     'App\\Http\\Middleware\\VerifyCsrfToken' => $baseDir . '/app/Http/Middleware/VerifyCsrfToken.php',
     'App\\Http\\Requests\\Request' => $baseDir . '/app/Http/Requests/Request.php',
     'App\\Http\\Requests\\UserAddressRequest' => $baseDir . '/app/Http/Requests/UserAddressRequest.php',
+    'App\\Models\\Product' => $baseDir . '/app/Models/Product.php',
+    'App\\Models\\ProductSku' => $baseDir . '/app/Models/ProductSku.php',
     'App\\Models\\User' => $baseDir . '/app/Models/User.php',
     'App\\Models\\UserAddress' => $baseDir . '/app/Models/UserAddress.php',
     'App\\Policies\\UserAddressPolicy' => $baseDir . '/app/Policies/UserAddressPolicy.php',

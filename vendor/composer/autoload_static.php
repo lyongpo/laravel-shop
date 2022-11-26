@@ -511,6 +511,9 @@ class ComposerStaticInit4d89561b0e9c120293de6c92c596ced2
     );
 
     public static $classMap = array (
+        'App\\Admin\\Controllers\\AuthController' => __DIR__ . '/../..' . '/app/Admin/Controllers/AuthController.php',
+        'App\\Admin\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Admin/Controllers/HomeController.php',
+        'App\\Admin\\Controllers\\UserController' => __DIR__ . '/../..' . '/app/Admin/Controllers/UserController.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\Auth\\ConfirmPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ConfirmPasswordController.php',
@@ -534,6 +537,8 @@ class ComposerStaticInit4d89561b0e9c120293de6c92c596ced2
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
         'App\\Http\\Requests\\Request' => __DIR__ . '/../..' . '/app/Http/Requests/Request.php',
         'App\\Http\\Requests\\UserAddressRequest' => __DIR__ . '/../..' . '/app/Http/Requests/UserAddressRequest.php',
+        'App\\Models\\Product' => __DIR__ . '/../..' . '/app/Models/Product.php',
+        'App\\Models\\ProductSku' => __DIR__ . '/../..' . '/app/Models/ProductSku.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
         'App\\Models\\UserAddress' => __DIR__ . '/../..' . '/app/Models/UserAddress.php',
         'App\\Policies\\UserAddressPolicy' => __DIR__ . '/../..' . '/app/Policies/UserAddressPolicy.php',
