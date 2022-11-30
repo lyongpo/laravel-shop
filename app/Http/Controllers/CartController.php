@@ -36,9 +36,11 @@ class CartController extends Controller
 
     public function index(Request $request)
     {
+        //拿到当前登录对象的模型
         $cartItems = $request->user()->cartItems()->with(['productSku.product'])->get();
-
-        return view('cart.index', ['cartItems' => $cartItems]);
+        //拿到登录对象的地址
+        $addresses = $request->user()->addresses()->orderBy('last_used_at', 'desc')->get();
+        return view('cart.index', ['cartItems' => $cartItems,'addresses' => $addresses]);
     }
 
     public function remove(ProductSku $sku, Request $request)
