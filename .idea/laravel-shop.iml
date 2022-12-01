@@ -119,6 +119,8 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/doctrine/event-manager" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/doctrine/cache" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/jxlwqq/quill" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/yansongda/supports" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/yansongda/pay" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

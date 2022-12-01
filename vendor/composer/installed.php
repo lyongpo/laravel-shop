@@ -1238,5 +1238,23 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+        'yansongda/pay' => array(
+            'pretty_version' => 'v3.2.10',
+            'version' => '3.2.10.0',
+            'reference' => 'c084d672732032b8b189aaa5c370b52bc06d3c95',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../yansongda/pay',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'yansongda/supports' => array(
+            'pretty_version' => 'v3.2.5',
+            'version' => '3.2.5.0',
+            'reference' => 'c3f736efe169696cef94730976e604a61c345b5c',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../yansongda/supports',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
     ),
 );
