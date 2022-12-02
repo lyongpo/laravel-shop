@@ -19,6 +19,15 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+        'bacon/bacon-qr-code' => array(
+            'pretty_version' => '2.0.7',
+            'version' => '2.0.7.0',
+            'reference' => 'd70c840f68657ce49094b8d91f9ee0cc07fbf66c',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../bacon/bacon-qr-code',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'brick/math' => array(
             'pretty_version' => '0.9.3',
             'version' => '0.9.3.0',
@@ -33,6 +42,15 @@
             'replaced' => array(
                 0 => '*',
             ),
+        ),
+        'dasprid/enum' => array(
+            'pretty_version' => '1.0.3',
+            'version' => '1.0.3.0',
+            'reference' => '5abf82f213618696dda8e3bf6f64dd042d8542b2',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../dasprid/enum',
+            'aliases' => array(),
+            'dev_requirement' => false,
         ),
         'davedevelopment/hamcrest-php' => array(
             'dev_requirement' => true,
@@ -127,6 +145,15 @@
             'reference' => 'f681aece0c2730e5d1082f9beb37243eb7d6e3c8',
             'type' => 'library',
             'install_path' => __DIR__ . '/../encore/laravel-admin',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'endroid/qr-code' => array(
+            'pretty_version' => '4.6.1',
+            'version' => '4.6.1.0',
+            'reference' => 'a75c913b0e4d6ad275e49a2c1de1cacffc6c2184',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../endroid/qr-code',
             'aliases' => array(),
             'dev_requirement' => false,
         ),

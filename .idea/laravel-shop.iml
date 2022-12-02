@@ -121,6 +121,9 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/jxlwqq/quill" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/yansongda/supports" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/yansongda/pay" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/dasprid/enum" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/bacon/bacon-qr-code" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/endroid/qr-code" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
