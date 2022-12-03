@@ -90,11 +90,8 @@
                             <!-- 如果订单的发货状态为已发货则展示确认收货按钮 -->
                             @if($order->ship_status === \App\Models\Order::SHIP_STATUS_DELIVERED)
                                 <div class="receive-button">
-                                    <form method="post" action="{{ route('orders.received', [$order->id]) }}">
-                                        <!-- csrf token 不能忘 -->
-                                        {{ csrf_field() }}
-                                        <button type="submit" class="btn btn-sm btn-success">确认收货</button>
-                                    </form>
+                                    <!-- 将原本的表单替换成下面这个按钮 -->
+                                    <button type="button" id="btn-receive" class="btn btn-sm btn-success">确认收货</button>
                                 </div>
                             @endif
                         </div>
@@ -122,6 +119,30 @@
                         }
                     })
             });
+
+            // 确认收货按钮点击事件
+            $('#btn-receive').click(function() {
+                // 弹出确认框
+                swal({
+                    title: "确认已经收到商品？",
+                    icon: "warning",
+                    dangerMode: true,
+                    buttons: ['取消', '确认收到'],
+                })
+                    .then(function(ret) {
+                        // 如果点击取消按钮则不做任何操作
+                        if (!ret) {
+                            return;
+                        }
+                        // ajax 提交确认操作
+                        axios.post('{{ route('orders.received', [$order->id]) }}')
+                            .then(function () {
+                                // 刷新页面
+                                location.reload();
+                            })
+                    });
+            });
+
         });
     </script>
 @endsection
