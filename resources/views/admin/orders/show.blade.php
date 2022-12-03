@@ -80,9 +80,9 @@
                 <!-- 否则展示物流公司和物流单号 -->
                 <tr>
                     <td>物流公司：</td>
-                    <td>{{ $order->ship_data['express_company'] }}</td>
+                    <td><?php if(isset($order->ship_data['express_company'])) {echo $order->ship_data['express_company'];} ?></td>
                     <td>物流单号：</td>
-                    <td>{{ $order->ship_data['express_no'] }}</td>
+                    <td><?php if(isset($order->ship_data['express_no'])) {echo $order->ship_data['express_no'];} ?></td>
                 </tr>
             @endif
             <!-- 订单发货结束 -->
