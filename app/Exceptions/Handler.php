@@ -14,6 +14,7 @@ class Handler extends ExceptionHandler
      */
     protected $dontReport = [
         InvalidRequestException::class,
+        CouponCodeUnavailableException::class,
     ];
     /**
      * A list of the inputs that are never flashed for validation exceptions.
