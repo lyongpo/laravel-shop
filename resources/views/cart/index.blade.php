@@ -172,7 +172,7 @@
                                 location.href = '/orders/' + response.data.id;
                             });
                     }, function (error) {
-                        console.log(error.response.data);
+                        console.log(error.response);
                         if (error.response.status === 422) {
                             // http 状态码为 422 代表用户输入校验失败
                             var html = '<div>';
@@ -183,6 +183,8 @@
                             });
                             html += '</div>';
                             swal({content: $(html)[0], icon: 'error'})
+                        } else if (error.response.status === 403) { // 这里判断状态 403
+                            swal(error.response.data.msg, '', 'error');
                         } else {
                             // 其他情况应该是系统挂了
                             swal('系统错误', '', 'error');
@@ -207,6 +209,7 @@
                         $('#btn-cancel-coupon').show(); // 显示 取消 按钮
                         $('#btn-check-coupon').hide(); // 隐藏 检查 按钮
                     }, function (error) {
+                        console.log(error.response.status);
                         // 如果返回码是 404，说明优惠券不存在
                         if(error.response.status === 404) {
                             swal('优惠码不存在', '', 'error');
