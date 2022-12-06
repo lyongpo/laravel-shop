@@ -560,6 +560,7 @@ class ComposerStaticInit4d89561b0e9c120293de6c92c596ced2
     );
 
     public static $classMap = array (
+        'AdminTablesSeeder' => __DIR__ . '/../..' . '/database/seeds/AdminTablesSeeder.php',
         'App\\Admin\\Controllers\\AuthController' => __DIR__ . '/../..' . '/app/Admin/Controllers/AuthController.php',
         'App\\Admin\\Controllers\\CouponCodesController' => __DIR__ . '/../..' . '/app/Admin/Controllers/CouponCodesController.php',
         'App\\Admin\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Admin/Controllers/HomeController.php',

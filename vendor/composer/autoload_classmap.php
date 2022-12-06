@@ -6,6 +6,7 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    'AdminTablesSeeder' => $baseDir . '/database/seeds/AdminTablesSeeder.php',
     'App\\Admin\\Controllers\\AuthController' => $baseDir . '/app/Admin/Controllers/AuthController.php',
     'App\\Admin\\Controllers\\CouponCodesController' => $baseDir . '/app/Admin/Controllers/CouponCodesController.php',
     'App\\Admin\\Controllers\\HomeController' => $baseDir . '/app/Admin/Controllers/HomeController.php',
