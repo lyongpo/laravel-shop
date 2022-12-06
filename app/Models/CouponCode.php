@@ -66,7 +66,7 @@ class CouponCode extends Model
         return $str . '减' . str_replace('.00', '', $this->value);
     }
 
-    public function checkAvailable($orderAmount = null)
+    public function checkAvailable(User $user, $orderAmount = null)
     {
         if (!$this->enabled) {
             throw new CouponCodeUnavailableException('优惠券不存在');
